@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --pink-background-color: #BB00FF;
+  --purple-background-color: #190361;
+  --blue-font-color: #34355B;
+  --gray-background-color: #E4EDF1;
+  --yellow-background-color: #FF9500;
+}
+
+body {
+  background: linear-gradient(280deg, var(--purple-background-color)0%, var(--pink-background-color) 100%);
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+/* Screen 1 */
+
+.screen1 {
+  max-width: 42.8rem;
+  max-height: 42.4rem;
+
+  background: white;
+
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  margin-bottom: 8rem;
+
+  border-radius: .5rem;
+
+  box-shadow: 0rem 1rem 3rem rgba(1,1,1,1.1);
+}
+
+.describe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bolder;
+
+  color: var(--blue-font-color);
+
+  text-align: center;
+}
+
+.describe p {
+  font-size: 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: var(--blue-font-color);
+}
+
+.screen1 img {
+  cursor: pointer;
+  transition: opacity .4s;
+}
+
+.screen1 img:hover {
+  opacity: .8;
+}
+
+/* Screen 2 */
+
+.screen2 {
+  background: white;
+
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  margin-bottom: 8rem;
+
+  border-radius: .5rem;
+
+  box-shadow: 0rem 1rem 3rem rgba(1,1,1,1.1);
+}
+
+.screen2 h2 {
+  padding-bottom: 1.7rem;
+}
+
+.message {
+  background: var(--gray-background-color);
+  padding: 1rem;
+
+  width: 40.3rem;
+
+  box-shadow: .2rem .5rem 1rem rgb(100, 99, 99);
+}
+
+.message p {
+  font-size: 2.4rem;
+  font-family: 'Dancing Script', sans-serif;
+
+  text-align: center;
+}
+
+.screen2 img {
+  padding: 6rem 6rem;
+}
+
+.align-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  height: 5.2rem;
+  width: 17.4rem;
+
+  border-radius: .4rem;
+  border: none;
+
+  font-size: 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: white;
+
+  background: var(--yellow-background-color);
+
+  display:flex ;
+  align-items:center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: background .3s;
+}
+
+button:hover {
+  background: #c5770aec;
+}
